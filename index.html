@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in to Big Zix</title>
+
+    <!-- Fredoka font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+
+    <style>
+        body, input {
+            font-family: "Fredoka", Verdana;
+        }
+
+        body {
+            background-color: #FDF3E7;
+        }
+
+        /* ---------- LEFT SIDE: logo and welcome text ---------- */
+        .welcome {
+            position: absolute;
+            top: 130px;
+            left: 150px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -50px;
+        }
+
+        .welcome h2 {
+            color: #B23A3A;
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+           
+        }
+
+        .welcome p {
+            color: #4A3328;
+            font-size: 18px;
+            margin-bottom: 100px;
+        }
+
+        /* ---------- para sa nakalagay sa table, pizza and ingredients ---------- */
+        .mesa {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+        .pizza {
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+        }
+
+        .tomato {
+            position: absolute;
+            bottom: 140px;
+            left: 0px;
+        }
+
+        .dahon {
+            position: absolute;
+            bottom: 100px;
+            left: 0px;
+        }
+
+        .bawang {
+            position: absolute;
+            bottom: 125px;
+            left: 90px;
+            width: 80px;
+        }
+
+        /* ---------- para sa "the log in" card ---------- */
+        .card {
+            position: absolute;
+            top: 50px;
+            right: 300px;
+            width: 320px;
+            height: 450px;
+            padding: 30px;
+            background-color: #FFF8EE;
+            border: 9px solid #D2B48C;
+            border-radius: 25px;
+
+        }
+
+        h1 {
+            color: #B23A3A;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* here po yung input ng email and password boxes */
+        input {
+            width: 300px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #E8D5B0;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        /* position ng password box tapos yung eye.png*/
+        .password-box {
+            position: relative;
+        }
+
+        .eye {
+            position: absolute;
+            top: 14px;
+            left: 275px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* eto yung log in button na red*/
+        #login-btn {
+            margin-top: 10px;
+            margin-left: 14px;
+            border: 2px solid #B23A3A;
+            background-color: #B23A3A;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: #B23A3A;
+            text-decoration: none;
+        }
+
+        .line {
+            border-top: 2px solid #E8D5B0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bottom pictures. The one written LAST in the HTML shows on TOP. -->
+    <img class="mesa" src="../IMAGES/Assets/mesa.svg" alt="wooden table">
+    <img class="pizza" src="../IMAGES/Assets/pizza.svg" alt="pizza">
+    <img class="tomato" src="../IMAGES/Assets/tomato.svg" alt="tomato">
+    <img class="dahon" src="../IMAGES/Assets/dahon.svg" alt="basil leaf">
+    <img class="bawang" src="../IMAGES/Assets/bawang.svg" alt="garlic">
+
+    <!-- Left side -->
+    <div class="welcome">
+        <img class="logo" src="../IMAGES/Assets/LOGO.svg" alt="Big Zix logo">
+        <h2>WELCOME TO<br>BIG ZIX</h2>
+        <p>Great pizza, good vibes, and happy<br>customers — every slice, every time.</p>
+    </div>
+
+    <!-- Log in card (last, so it stays on top of the pizza) -->
+    <div class="card">
+        <h1>Log in to<br>Big Zix</h1>
+
+        <form method="GET" action="#">
+            <label>Email</label>
+            <br>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+            <br>
+
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" name="password" placeholder="Enter your Password" required>
+                <img class="eye" src="eye.png" alt="show password">
+            </div>
+
+            <input type="submit" id="login-btn" value="Log in">
+        </form>
+
+        <p class="center"><a href="#">Forgot password?</a></p>
+
+        <div class="line"></div>
+
+        <p class="center">New here? <a href="register.html">Create an account</a></p>
+    </div>
+</body>
+</html>
